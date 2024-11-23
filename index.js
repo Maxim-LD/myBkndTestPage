@@ -13,7 +13,7 @@ document.getElementById('request-form').addEventListener('submit', async (event)
 
     
     try {
-        const response = await fetch('https://donation-manager-e83t.onrender.com/', {
+        const response = await fetch('https://donation-manager-e83t.onrender.com/api/create_user', {
             method: "POST",
             headers: {"Content-Type": "application/json" },
             body: JSON.stringify({ firstName, lastName, email, password, designation }),      
