@@ -1,6 +1,13 @@
 
 body {
     background-color: beige;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
 }
 .head {
     display: flex;
@@ -18,44 +25,65 @@ h1 {
     
 }
 
-
 h2 {
     text-align: center;
     background: blue;
     color: white;
+    margin-top: 15px;
     margin-right: 100px;
     margin-left: 100px;
+    padding-top: 5px;
     border-radius: 5px;
     font-size: small;
+    height: 20px;
+    justify-content: center;
 }
 
 form {
     border: none;
-    margin-top: 1px;
+    margin-top: 0 auto;
     padding: 10px; 
+    padding-top: 30px; 
     justify-content: center;
     align-items: center;  
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
 }
 
 .container {
-    max-width: 600px;
-    width: 50%; /* adjust to desired width */
+   
+    width: 100%; /* adjust to desired width */
     margin: 0 auto; /* center the container */
     box-sizing: border-box;
+    max-width: 400px; /* Adjust for smaller screens */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+   
   }
 
 input {
-    width: 500px;
+    /* width: 500px;
     height: 30px;
     border: none;
-    border-bottom: 1px solid plum;
+  
     padding-left: 15px;
+     */
+
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid plum;
+    border-radius: 5px;
+    box-sizing: border-box;
     align-content: center;
 
 }
 
 .sub-btn {
-    width: 520px;
+    width: 200px;
     height: 30px;
     background-color: blue;
     color: white;
