@@ -13,31 +13,35 @@
             <h1>Register Here</h1>
        </div>
 
-        <form id="request-form">
-            <h2>Fill the form below to Register</h2>
-
-            <input id="fname" type="text" placeholder="Firstname">
-            <br> <br>
-
-            <input id="lname" type="text" placeholder="Lastname">
-            <br> <br>
-
-            <input id="email" type="email" placeholder="email@example.com">
-            <br> <br>
-
-            <input id="pass" type="text" placeholder="Password">
-            <br> <br>
-
-            <input id="role" type="text" placeholder="Designation">
-            <br> <br> 
+        <h2>Fill the form below to Register</h2>
+        <div class="container">
+            <form id="request-form">
             
-            <button type="submit" id="btn" class="sub-btn">Submit</button>
-            
-        </form>
 
-       
+                <input id="fname" type="text" placeholder="firstname">
+                <br> <br>
+
+                <input id="lname" type="text" placeholder="lastname">
+                <br> <br>
+
+                <input id="email" type="email" placeholder="email@example.com">
+                <br> <br>
+
+                <input id="pass" type="password" placeholder="password">
+                <br> <br>
+
+                <input id="role" type="text" placeholder="designation">
+                <br> <br> 
+                
+                <button type="submit" id="btn" class="sub-btn">Submit</button>
+                
+            </form>
+        </div>
+        
         <p id="response" class="response-message"></p>
 
+       <button type="submit" id="btn" class="info-btn">Do not click !!!</button>
+       
         <script src="./index.js"></script>
     </body>
 </html>

@@ -13,21 +13,13 @@ document.getElementById('request-form').addEventListener('submit', async (event)
 
     
     try {
-        const response = await fetch('https://donation-manager-e83t.onrender.com/api/create_user', {
+        const response = await fetch('http://localhost:8089/api/create_user', {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({ firstName, lastName, email, password, designation }),      
         })
-        
-
-        const response1 = await fetch('https://donation-manager-e83t.onrender.com/api/users', {
-            method: "GET",
-            headers: { "Content-Type": "application/json" },
-        })
-
        
         const data = await response.json()
-        const data1 = await response1.json();
 
         const responseElement = document.getElementById("response")
 
@@ -35,8 +27,6 @@ document.getElementById('request-form').addEventListener('submit', async (event)
         responseElement.className = "response-message error";
         responseElement.style.display = "block";
         console.log("Response from backend:", data)
-        console.log("Response from backend:", data1)
-
 
     } catch (error) {
         console.error("Error sending data:", error)
