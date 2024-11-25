@@ -13,7 +13,7 @@ document.getElementById('request-form').addEventListener('submit', async (event)
 
     
     try {
-        const response = await fetch('http://localhost:8089/api/create_user', {
+        const response = await fetch('https://localhost:8089/api/create_user', {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({ firstName, lastName, email, password, designation }),      
